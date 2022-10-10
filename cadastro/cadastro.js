@@ -27,26 +27,19 @@ const cadastros = {}
 cadastro = 0
 
 app.post('/cadastro', (requisicao, resposta) => {
-/*  cadastro++
+    /*cadastro++
     const {nome, cpf, senha} = requisicao.body
     cadastros[cadastro] = {nome, cpf, senha}
-    resposta.status(201).send(cadastros[cadastro]) */
-
-    //resposta.render('login')
-
-
-    
-
+    resposta.status(201).send(cadastros[cadastro])
+    resposta.render('login')*/  
     cadastro++
     const {nome, cpf, senha} = requisicao.body
     cadastros[cadastro] = {nome, cpf, senha}
     console.log(cadastros[cadastro])
-   // const nome = requisicao.body.campo_nome
-   // const cpf = requisicao.body.campo_cpf
-    //const senha = requisicao.body.campo_senha
-    //console.log(`${nome} + ${cpf} + ${senha}`)
-    
-
+    /*const nome = requisicao.body.campo_nome
+    const cpf = requisicao.body.campo_cpf
+    const senha = requisicao.body.campo_senha
+    console.log(`${nome} + ${cpf} + ${senha}`)*/
     resposta.render('cadastro-teste')
     console.log("Teste Teste Teste")
 })
