@@ -5,6 +5,8 @@ Geovanna Holanda da Silva- RA:819115164
 Luidy Yutá Pereira Monteiro - RA:82119379
 Rafael Freitas Venosa - RA:82117385
 
-Entrega 24/10:
-- Foi implementado as telas de login e cadastros (front) através do Angular. (Está localizado na pasta "telas")
-- Tivemos dificuldade em implementar o cadastro e a autenticação do login (back), porém será entregue na próxima data.
+Atualização 06/11:
+- Foi feita a implementação do cadastro dos usuários.
+- Foi feita a implementação da autenticação dos usuários.
+
+Obs.: Foi utilizado o Sequelize e o banco de dados MySQL.
