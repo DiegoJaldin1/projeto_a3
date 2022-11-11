@@ -5,6 +5,10 @@ const app = express()
 
 
 const mysql = require('mysql2')
+const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
+
+
 const Usuario = require('./models/usuario')
 
 app.use(express.json())
@@ -27,6 +31,12 @@ const pool = mysql.createPool({
 const sequelize = new Sequelize(DB_SCHEMA, DB_USER, DB_PASSWORD, {
     dialect: 'mysql',
     host: DB_HOST
+}) 
+
+//Tentativa de usar o sequelize
+const sequelize = new Sequelize(DB_SCHEMA, DB_USER, DB_PASSWORD, {
+    dialect: 'mysql',
+    host: DB_HOST
 })
 
 //Tentando conexão com o Bando de Dados
@@ -37,17 +47,28 @@ sequelize.authenticate()
     console.log("Conexão nada OK - " + erro)
 }) */
 
+/*
+const token = jwt.sign({secret: 7}, "segredo")
+
+
+app.get("/teste", async (req, res) => {
+    console.log(token)
+    res.send(token)
+})
+*/
 
 // ------CADASTRAR login de usuário------ FUNCIONANDO!!
-app.post("/login", (req, res) => {
+app.post("/login", async (req, res) => {
 
-    //utilizando o operador de descontrução:
     const dados = req.body
 
-    Usuario.create(dados)
+    dados.senha = await bcrypt.hash(dados.senha, 7)
+
+    await Usuario.create(dados)
     .then( () => {
         return res.json({
             erro: false,
+            senha: dados.senha,
             mensagem: "Usuário cadastrado!"
         })
     }).catch( () => {
@@ -71,16 +92,31 @@ app.post("/logar", async (req, res) => {
     if (usuario === null) {
         return res.status(400).json({
             erro: true,
-            mensagem: "Usuário ou senha incorretos!CPF não encontrado."
+            mensagem: "Usuário ou senha incorretos! (CPF não encontrado)"
         })
     }
 
+
+    if(!(await bcrypt.compare(req.body.senha, usuario.senha))){
+        return res.status(400).json({
+            erro: true,
+            mensagem: "Usuário ou senha incorretos! (Senha incorreta)"
+        })
+    }
+
+    //é uma "var" porque o valor pode ser alterado
+    //deve ser informado a primary key, o valor está como 1 pois no momento não tem nenhum outro
+    //já o "sorvete0101" é o segredo, teoricamente é algo "único".
+    var token = jwt.sign({cpf: 1}, "sorvete0101") 
+
+    /*
     if(req.body.senha !== usuario.senha){
         return res.status(400).json({
             erro: true,
             mensagem: "Usuário ou senha incorretos! Senha inválida"
         })
     }
+    */
 
     return res.json({
         erro: false,
@@ -88,6 +124,78 @@ app.post("/logar", async (req, res) => {
     })
 
 })
+
+
+app.put("/alterar-acesso", async (req, res) => {
+   
+    const usuario = await Usuario.findOne({
+        attributes: ['tipo_acesso'],
+        where: {
+            cpf: req.body.cpf
+        }
+    })
+    const crm = req.body.crm
+    const acesso = req.body.tipo_acesso
+    const cpf_medico = req.body.cpf_medico
+
+    console.log(crm)
+    if (usuario == null){
+        return res.status(400).json({
+            erro: true,
+            mensagem: "Usuário não encontrado! Tente novamente"
+        })
+    }
+ 
+    if (acesso == "administrador" || acesso == "Administrador" || acesso == "adm"){
+       
+        if (cpf_medico != null){
+            const usuario_medico = await Usuario.findOne({
+                attributes: ['tipo_acesso', 'cpf', 'nome', 'crm'],
+                where: {
+                    cpf: cpf_medico
+                }
+            })
+            console.log(crm)
+
+            usuario_medico.update(
+                {tipo_acesso: "Médico", crm},
+                {where: {cpf: cpf_medico}}
+            )
+           
+           
+ 
+ 
+        } else {
+            return res.status(400).json({
+                erro: true,
+                mensagem: "Mudança não permitida!"
+            })
+        }
+ 
+    }
+ 
+    res.status(201).json({
+        erro: false,
+        mensagem: "Mudança realizada!"
+    })
+ 
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
