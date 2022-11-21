@@ -1,39 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tela de Login</title>
-    <style>
-    </style>
-
-    
-</head>
-<body class="bg">
-<body>
-    <style>
-        ul{
-            list-style: none;
+    <style></style>
+  </head>
+  <body class="bg">
+    <body>
+      <style>
+        ul {
+          list-style: none;
         }
-    </style>
-    <div>
+      </style>
+      <div>
         <ul>
-            <li>
-                <img src="assets/img/logo.png" width="230">               
-            </li>
+          <li>
+            <img src="assets/img/logo.png" width="230" />
+          </li>
         </ul>
-        <hr>
+        <hr />
         <h1>LOGIN</h1>
-        <form method="post">
-        <input id="cpf" type="text" placeholder="CPF">
+        <input id="cpf" type="text" matInput="cpf" [(ngModel)]="cpf" placeholder="CPF" />
         <pre></pre>
-        <input id="senha" type="password" placeholder="********">
+        <input id="senha" type="password" matInput="senha" [(ngModel)]="senha" placeholder="********"/>
         <pre></pre>
-        <button id="entrar">ENTRAR</button>
-        </form>
-        <h4 id="ou">ou</h4>
-        <a id="criar" href="">Crie sua conta</a>
-    </div>
-
-</body>
+        <button id="entrar" mat-button (click)="connectionLogin()">
+          ENTRAR
+        </button>
+      </div>
+    </body>
+  </body>
+</html>

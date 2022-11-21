@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'minhafonte';   
+    src: url(./Sen/Sen-Regular.ttf);   
+}
+#titulo{
+    font-family: minhafonte;
+    color: #004E64;
+    font-size: 430%;
+    position: absolute;
+    top: 27%;
+    padding-left: 10%;
+}
+#subtitulo{
+    font-family: minhafonte;
+    color: black;
+    font-size: 180%;
+    position: absolute;
+    top: 48%;
+    padding-left: 10%;
+}
+#Login{
+    font-family: minhafonte;
+    font-size: 140%;
+    text-align: center;
+    background-color: #004E64;
+    height: 4%;
+    width: 10%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    position:absolute; 
+    top:65%;
+    left:15%;
+    transform: translate(-50%, -50%);
+
+}
+#Login:hover{
+    background-color: #1A7CB2;
+}

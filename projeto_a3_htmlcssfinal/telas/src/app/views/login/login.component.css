@@ -20,17 +20,16 @@ div{
 
 }
 div{
-
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     background-color: rgba(239, 247, 246, 100);
     position: absolute;
     text-align: center;
     top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   padding: 60px;
-   border-radius: 25px;
-   color:#004E64;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px;
+    border-radius: 25px;
+    color:#004E64;
    
 
 }
@@ -70,30 +69,8 @@ hr{
     cursor: pointer;
     position: relative;
     float: left;
+    left: 25%;
 }
 #entrar:hover{
     background-color: #1A7CB2;
-}
-
-#criar{
-    font-family: minhafonte;
-    font-weight: bold;
-    font-size: 15px;
-    color:#004E64;
-    position: relative;
-    float: left;
-    cursor: pointer;
-    text-decoration: underline;
-    width: 40%;
-    margin-top: 7%;
-}
-#criar:hover{
-    color:#1A7CB2;
-}
-#ou{
-    font-family: minhafonte;
-    font-size: 15px;
-    position: relative;
-    float: left;
-    width: 10%; 
 }

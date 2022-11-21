@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Paciente</title>
+</head>
+<body>
+    <mat-drawer-container id="card">
+        <button mat-button id="inicio" (click)="connectionInicio()">Início</button>
+        <button mat-button id="prontuario" (click)="connectionProntuario()">Prontuário</button>
+  
+        <button mat-button [matMenuTriggerFor]="menu" id="cadastro">Cadastro de <br> Usuários</button>
+        <mat-menu #menu="matMenu">
+        <button mat-menu-item id="cdu1" (click)="connectionCadastrofunc()">Funcionário</button>
+        <button mat-menu-item id="cdu2" (click)="connectionCadastromed()">Médico</button>
+        <button mat-menu-item id="cdu3" >Paciente</button>
+        </mat-menu>
+
+        <hr id="linha1" />
+        <hr id="linha2" />
+        <button mat-button id="sair">Sair</button>
+      </mat-drawer-container>
+      <mat-drawer-container id="card2">
+        <h1 id="titulo">Cadastre um Paciente:</h1>
+
+          <input id="nome" type="text" matInput="nome" [(ngModel)]="nome" placeholder="Nome Completo">
+          <input id="cpf" type="text" matInput="cpf" [(ngModel)]="cpf" placeholder="CPF">
+          <input id="datadenascimento" type="text" matInput="dt_nascimento" [(ngModel)]="dt_nascimento" placeholder="Data de Nascimento">
+          <input id="profissao" type="text" matInput="profissao" [(ngModel)]="profissao" placeholder="Profissão">
+          <input id="sexo" type="text" matInput="sexo" [(ngModel)]="sexo" placeholder="Sexo">
+          <input id="endereco" type="text" matInput="rua" [(ngModel)]="rua" placeholder="Endereço">
+          <input id="numero" type="text" matInput="numero_rua" [(ngModel)]="numero_rua" placeholder="Nº">
+          <input id="bairro" type="text" matInput="bairro" [(ngModel)]="bairro" placeholder="Bairro">
+          <input id="cep" type="text" matInput="cep" [(ngModel)]="cep" placeholder="CEP">
+          
+        <button mat-button id="botao"(click)="connectionCadastropac()">Cadastrar</button>
+      </mat-drawer-container>
+</body>
+</html>

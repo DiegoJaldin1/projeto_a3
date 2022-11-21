@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prontuario Administrador</title>
+</head>
+<body>
+    <mat-drawer-container id="card">
+        <button mat-button id="inicio" (click)="connectionInicio()">Início</button>
+        <button mat-button id="prontuario">Prontuário</button>
+
+        
+        <button mat-button [matMenuTriggerFor]="menu" id="cadastro">Cadastro de <br> Usuários</button>
+      <mat-menu #menu="matMenu">
+      <button mat-menu-item id="cdu1" (click)="connectionCadastrofunc()">Funcionário</button>
+      <button mat-menu-item id="cdu2" (click)="connectionCadastromed()">Médico</button>
+      <button mat-menu-item id="cdu3" (click)="connectionCadastropac()">Paciente</button>
+      </mat-menu>
+
+        <hr id="linha1" />
+        <hr id="linha2" />
+        <button mat-button id="sair">Sair</button>
+      </mat-drawer-container>
+  <h1 id="titulo">Prontuário Eletrônico </h1>
+  <mat-drawer-container id="card2">
+        <hr id="linha3">
+        <input id="cpf" type="text" matInput="cpf" [(ngModel)]="cpf" placeholder="CPF">
+        <input id="sexo" type="text" matInput="sexo" [(ngModel)]="sexo" placeholder="Sexo">
+        <input id="altura" type="text" matInput="altura" [(ngModel)]="altura" placeholder="Altura">
+        <input id="peso" type="text" matInput="peso" [(ngModel)]="peso" placeholder="Peso">
+        <input id="anamnese" type="text" matInput="anamnese" [(ngModel)]="anamnese" placeholder="Anamnese">
+        <input id="hipotese" type="text" matInput="hip_diagnostico" [(ngModel)]="hip_diagnostico" placeholder="Hipotese Diagnóstica">
+        <input id="prescricao" type="text" matInput="prescricao" [(ngModel)]="prescricao" placeholder="Prescricao">
+        <meta> <button mat-button id="salvar" (click)="connectionCadastroprontuario()">Salvar Prontuário</button>
+        
+        <hr id="linha4">
+
+        
+
+  </mat-drawer-container>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+@font-face {
+    font-family: 'minhafonte';   
+    src: url(./Sen/Sen-Regular.ttf);   
+}
+
+#card{
+    background-color: #004E64;
+    position: absolute;
+    width: 10%;
+    height:100%;
+}
+
+#inicio{
+    background-color: #004E64;
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 2%;
+    width: 90%;
+    left: 4%;
+    cursor: pointer;
+}
+#inicio:hover{
+    background-color: white;
+    color: #004E64;
+    font-weight: bold;
+}
+
+#linha1{
+    position: absolute;
+    width: 99%;
+    top: 7%;
+}
+
+#prontuario{
+    background-color: white;
+    font-family: minhafonte;
+    font-size: 150%;
+    color: #004E64;
+    position: absolute;
+    top: 10%;
+    width: 90%;
+    left: 4%;
+    cursor: pointer;
+    font-weight: bold;
+}
+#prontuario:hover{
+    background-color: white;
+    color: #004E64;
+    font-weight: bold;
+}
+
+#linha2{
+    position: absolute;
+    width: 99%;
+    top: 80%;
+}
+
+#sair{
+    background-color: #004E64;
+    font-family: minhafonte;
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    top: 85%;
+    width: 90%;
+    left: 4%;
+    cursor: pointer;
+}
+#sair:hover{
+    background-color: white;
+    color: #004E64;
+}
+
+#titulo{
+    font-family: minhafonte;
+    color: #004E64;
+    font-size: 200%;
+    position: absolute;
+    top: 13%;
+    padding-left: 13%;
+}
+
+
+
+
+
+
+
+
+
+#card2{
+    background-color: white;
+    position: absolute;
+    width: 40%;
+    height:70%;
+    left: 13%;
+    top: 20%;
+}
+
+#cpf{
+    font-family: minhafonte;
+    text-align: center;
+    background-color: #E7E7E7;
+    border-radius: 10px;
+    border-color: #004E64;
+    color: black;
+    font-size: 150%;
+    position: relative;
+    top: 3%;
+    left: 3%;
+    width: 60%;
+
+}
+
+#salvar{
+    background-color: #004E64;
+    font-family: minhafonte;
+    font-size: 110%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    width: 25%;
+    height: 7%;
+    cursor: pointer;
+}
+#salvar:hover{
+    background-color: #1A7CB2;
+}
+#linha3{
+    background-color: #1A7CB2;
+    position: absolute;
+    left: 2%;
+    width: 96%;
+    top: 10%;
+    height: 5px;
+    border-radius: 30px;
+}
+
+
+#sexo{
+    font-family: minhafonte;
+    text-align: center;
+    background-color: #E7E7E7;
+    border-radius: 10px;
+    border-color: #004E64;
+    color: black;
+    font-size: 110%;
+    position: absolute;
+    left: 3%;
+    top: 15%;
+    width: 25%;
+}
+#altura{
+    font-family: minhafonte;
+    text-align: center;
+    background-color: #E7E7E7;
+    border-radius: 10px;
+    border-color: #004E64;
+    color: black;;
+    font-size: 110%;
+    position: absolute;
+    right: 3%;
+    top: 15%;
+    width: 25%;
+}
+
+#peso{
+    font-family: minhafonte;
+    text-align: center;
+    background-color: #E7E7E7;
+    border-radius: 10px;
+    border-color: #004E64;
+    color: black;
+    font-size: 110%;
+    position: absolute;
+    left: 36%;
+    top: 15%;
+    width: 25%;
+}
+
+#linha4{
+    background-color: #1A7CB2;
+    position: absolute;
+    left: 2%;
+    width: 96%;
+    top: 27%;
+    height: 3px;
+    border-radius: 30px;
+}
+
+
+#anamnese{
+    font-family: minhafonte;
+    text-align: left;
+    background-color: #E7E7E7;
+    border-radius: 10px;
+    border-color: #004E64;
+    color: black;
+    font-size: 110%;
+    position: absolute;
+    left: 3%;
+    top:33% ;
+    width: 93%;
+    height: 20%;
+  }
+
+#hipotese{
+    font-family: minhafonte;
+    text-align: left;
+    background-color: #E7E7E7;
+    border-radius: 10px;
+    border-color: #004E64;
+    color: black;
+    font-size: 110%;
+    position:absolute;
+    left: 3%;
+    top:60% ;
+    width: 93%;
+    height: 20%;
+  }
+
+#prescricao{
+    font-family: minhafonte;
+    text-align: left;
+    background-color: #E7E7E7;
+    border-radius: 10px;
+    border-color: #004E64;
+    color: black;
+    font-size: 110%;
+    position:absolute;
+    left: 3%;
+    top:87% ;
+    width: 93%;
+    height: 20%;
+  }
+ 

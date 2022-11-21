@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Médico Administrador</title>
+</head>
+<body>
+    <mat-drawer-container id="card">
+        <button mat-button id="inicio" (click)="connectionInicio()">Início</button>
+        <button mat-button id="prontuario" (click)="connectionProntuario()">Prontuário</button>
+  
+        <button mat-button [matMenuTriggerFor]="menu" id="cadastro">Cadastro de <br> Usuários</button>
+        <mat-menu #menu="matMenu">
+        <button mat-menu-item id="cdu1" (click)="connectionCadastrofunc()">Funcionário</button>
+        <button mat-menu-item id="cdu2">Médico</button>
+        <button mat-menu-item id="cdu3" (click)="connectionCadastropac()">Paciente</button>
+        </mat-menu>
+        
+        <hr id="linha1" />
+        <hr id="linha2" />
+        <button mat-button id="sair">Sair</button>
+      </mat-drawer-container>
+      <mat-drawer-container id="card2">
+        <h1 id="titulo">Cadastre um Médico:</h1>
+        
+        <input id="nome" type="text"  matInput="nome" [(ngModel)]="nome" placeholder="Nome Completo">
+
+        <input id="cpf" type="text" matInput="cpf" [(ngModel)]="cpf" placeholder="CPF">
+
+        <input id="datadenascimento" type="text" matInput="dt_nascimento" [(ngModel)]="dt_nascimento" placeholder="Data de Nascimento">
+
+        <input id="crm" type="text" matInput="crm" [(ngModel)]="crm" placeholder="CRM">
+
+        <input id="especialidade" type="text" matInput="especialidade" [(ngModel)]="especialidade" placeholder="Especialidade">
+
+        <input id="senha" type="password" matInput="senha" [(ngModel)]="senha" placeholder="Senha">
+
+        <button mat-button id="botao" (click)="connectionCadastromed()">Cadastrar</button>
+      </mat-drawer-container>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'minhafonte';   
+    src: url(./Sen/Sen-Regular.ttf);   
+}
+
+#card{
+    background-color: #004E64;
+    position: absolute;
+    width: 10%;
+    height:100%;
+}
+
+#inicio{
+    background-color: white;
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    color: #004E64;
+    position: absolute;
+    top: 2%;
+    width: 90%;
+    left: 4%;
+    cursor: pointer;
+    font-weight: bold;
+}
+#inicio:hover{
+    background-color: white;
+    color: #004E64;
+    font-weight: bold;
+}
+
+#linha1{
+    position: absolute;
+    width: 99%;
+    top: 7%;
+}
+
+#cadastro{
+    background-color: #004E64;
+    font-family: minhafonte;
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    top: 10%;
+    width: 90%;
+    left: 4%;
+    cursor: pointer;
+}
+#cadastro:hover{
+    background-color: white;
+    color: #004E64;
+    font-weight: bold;
+}
+#cdu1{
+    font-family: minhafonte;
+    font-size: 140%;
+    text-align: center;
+    color: #004E64;
+    font-weight: bold;
+}
+#cdu2{
+    font-family: minhafonte;
+    font-size: 140%;
+    text-align: center;
+    color: #004E64;
+    font-weight: bold;
+
+}
+#cdu3{
+    font-family: minhafonte;
+    font-size: 140%;
+    text-align: center;
+    color: #004E64;
+    font-weight: bold;
+
+}
+#prontuario{
+    background-color: #004E64;
+    font-family: minhafonte;
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    top: 20%;
+    width: 90%;
+    left: 4%;
+    cursor: pointer;
+}
+#prontuario:hover{
+    background-color: white;
+    color: #004E64;
+    font-weight: bold;
+}
+
+
+#linha2{
+    position: absolute;
+    width: 99%;
+    top: 80%;
+}
+
+#sair{
+    background-color: #004E64;
+    font-family: minhafonte;
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    top: 85%;
+    width: 90%;
+    left: 4%;
+    cursor: pointer;
+}
+#sair:hover{
+    background-color: white;
+    color: #004E64;
+}
+
+#titulo{
+    font-family: minhafonte;
+    color: #004E64;
+    font-size: 300%;
+    position: absolute;
+    top: 13%;
+    padding-left: 13%;
+}
+
+
+
+
+
+
+
+
+
+#card2{
+    background-color: white;
+    position: absolute;
+    width: 40%;
+    height:70%;
+    left: 13%;
+    top: 20%;
+}

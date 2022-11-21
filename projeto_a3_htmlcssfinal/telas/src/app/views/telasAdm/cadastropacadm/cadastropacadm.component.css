@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'minhafonte';   
+    src: url(./Sen/Sen-Regular.ttf);   
+}
+
+#card{
+    background-color: #004E64;
+    position: absolute;
+    width: 10%;
+    height:100%;
+}
+
+#inicio{
+    background-color: #004E64;
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 2%;
+    width: 90%;
+    left: 4%;
+    cursor: pointer;
+}
+#inicio:hover{
+    background-color: white;
+    color: #004E64;
+    font-weight: bold;
+}
+
+#linha1{
+    position: absolute;
+    width: 99%;
+    top: 7%;
+}
+
+#cadastro{
+    background-color: white;
+    font-family: minhafonte;
+    font-size: 150%;
+    color: #004E64;
+    position: absolute;
+    top: 10%;
+    width: 90%;
+    left: 4%;
+    cursor: pointer;
+    font-weight: bold;
+}
+#cdu1{
+    font-family: minhafonte;
+    font-size: 140%;
+    text-align: center;
+    color: #004E64;
+    font-weight: bold;
+}
+#cdu2{
+    font-family: minhafonte;
+    font-size: 140%;
+    text-align: center;
+    color: #004E64;
+    font-weight: bold;
+
+}
+#cdu3{
+    font-family: minhafonte;
+    font-size: 140%;
+    text-align: center;
+    color: #004E64;
+    font-weight: bold;
+
+}
+#prontuario{
+    background-color: #004E64;
+    font-family: minhafonte;
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    top: 20%;
+    width: 90%;
+    left: 4%;
+    cursor: pointer;
+}
+#prontuario:hover{
+    background-color: white;
+    color: #004E64;
+    font-weight: bold;
+}
+
+#linha2{
+    position: absolute;
+    width: 99%;
+    top: 80%;
+
+}
+
+#sair{
+    background-color: #004E64;
+    font-family: minhafonte;
+    font-size: 150%;
+    color: white;
+    position: absolute;
+    top: 85%;
+    width: 90%;
+    left: 4%;
+    cursor: pointer;
+}
+#sair:hover{
+    background-color: white;
+    color: #004E64;
+}
+
+
+
+
+#card2{
+    background-color: #EBF0EF;
+    border-radius: 20px;
+    position: absolute;
+    width: 35%;
+    height:50%;
+    left: 15%;
+    top: 24%;
+}
+
+#titulo{
+    font-family: minhafonte;
+    color: #004E64;
+    font-size: 240%;
+    position: absolute;
+    top: 1px;
+    padding-left: 20%;
+}
+#nome{
+     font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-color: #004E64;
+    border-radius: 10px;
+    position: absolute;
+    top: 18%;
+    left: 10%;
+    width: 79%;
+}
+#cpf{
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-color: #004E64;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 38%;
+}
+#datadenascimento{
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-color: #004E64;
+    border-radius: 10px;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    width: 38%;
+}
+#profissao{
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-color: #004E64;
+    border-radius: 10px;
+    position: absolute;
+    top: 42%;
+    left: 10%;
+    width: 38%;
+}
+#sexo{
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-color: #004E64;
+    border-radius: 10px;
+    position: absolute;
+    top: 42%;
+    right: 10%;
+    width: 38%;
+}
+#endereco{
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-color: #004E64;
+    border-radius: 10px;
+    position: absolute;
+    top: 54%;
+    left: 10%;
+    width: 68%;
+}
+#numero{
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-color: #004E64;
+    border-radius: 10px;
+    position: absolute;
+    top: 54%;
+    right: 10%;
+    width: 6%;
+}
+#bairro{
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-color: #004E64;
+    border-radius: 10px;
+    position: absolute;
+    top: 66%;
+    left: 10%;
+    width: 38%;
+}
+#cep{
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-color: #004E64;
+    border-radius: 10px;
+    position: absolute;
+    top: 66%;
+    right: 10%;
+    width: 38%;
+}
+#senha{
+    font-family: minhafonte;
+    font-size: 150%;
+    text-align: center;
+    background-color: #e7e7e7;
+    border-color: #004E64;
+    border-radius: 10px;
+    position: absolute;
+    top: 78%;
+    left: 10%;
+    width: 79%;
+}
+
+
+#botao{
+    background-color: #004E64;
+    font-family: minhafonte;
+    font-size: 150%;
+    border-radius: 10px;
+    color: white;
+    position: absolute;
+    left: 37%;
+    top: 90%;
+    width: 22%;
+    height: 8%;
+    cursor: pointer;
+}
+#botao:hover{
+    background-color: #1A7CB2;
+    color: white;
+}
+
