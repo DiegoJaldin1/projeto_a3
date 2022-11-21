@@ -34,23 +34,6 @@
     top: 7%;
 }
 
-#listagem{
-    background-color: #004E64;
-    font-family: minhafonte;
-    font-size: 150%;
-    color: white;
-    position: absolute;
-    width: 90%;
-    left: 4%;
-    top: 9%;
-    cursor: pointer;
-}
-#listagem:hover{
-    background-color: white;
-    color: #004E64;
-    font-weight: bold;
-}
-
 #cadastro{
     background-color: white;
     font-family: minhafonte;

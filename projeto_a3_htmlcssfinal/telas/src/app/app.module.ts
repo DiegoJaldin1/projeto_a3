@@ -23,7 +23,6 @@ import { MatMenuModule } from '@angular/material/menu';
 
 import { InicialComponent } from './views/inicial/inicial.component';
 
-import { ListagemadmComponent } from './views/telasAdm/listagemadm/listagemadm.component';
 import { ProntuarioadmComponent } from './views/telasAdm/prontuarioadm/prontuarioadm.component';
 import { CadastrofuncadmComponent } from './views/telasAdm/cadastrofuncadm/cadastrofuncadm.component';
 import { CadastromedadmComponent } from './views/telasAdm/cadastromedadm/cadastromedadm.component';
@@ -33,7 +32,6 @@ import { ProntuariomedComponent } from './views/telasMedico/prontuariomed/prontu
 import { TelainicialmedComponent } from './views/telasMedico/telainicialmed/telainicialmed.component';
 import { TelainicialfuncComponent } from './views/telasFuncionario/telainicialfunc/telainicialfunc.component';
 import { TelainicialadmComponent } from './views/telasAdm/telainicialadm/telainicialadm.component';
-import { ListagemmedComponent } from './views/telasMedico/listagemmed/listagemmed.component';
 
 
 @NgModule({
@@ -42,7 +40,6 @@ import { ListagemmedComponent } from './views/telasMedico/listagemmed/listagemme
     LoginComponent,
     TopoComponent,
     InicialComponent,
-    ListagemadmComponent,
     ProntuarioadmComponent,
     CadastrofuncadmComponent,
     CadastromedadmComponent,
@@ -52,7 +49,6 @@ import { ListagemmedComponent } from './views/telasMedico/listagemmed/listagemme
     TelainicialmedComponent,
     TelainicialfuncComponent,
     TelainicialadmComponent,
-    ListagemmedComponent,
   ],
 
   imports: [
