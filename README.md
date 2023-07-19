@@ -1,8 +1,8 @@
 Integrantes do Grupo:
+Luidy Yutá Pereira Monteiro - RA:82119379
 Diego Jaldin - RA:821119998
 Gabriel Lima Ruas - RA:821235160
 Geovanna Holanda da Silva- RA:819115164
-Luidy Yutá Pereira Monteiro - RA:82119379
 Rafael Freitas Venosa - RA:82117385
 
 Atualização 10/11:
